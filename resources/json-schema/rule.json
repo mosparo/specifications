@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "rating": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "minItems": 1
+        },
+        "spamRatingFactor": {
+            "type": "integer"
+        },
+        "uuid": {
+            "type": "string"
+        }
+    },
+    "required": ["name", "type", "items", "uuid"],
+    "additionalProperties": false
+}

@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "lastUpdatedAt": {
+            "type": "string"
+        },
+        "refreshInterval": {
+            "type": "integer"
+        },
+        "rules": {
+            "type": "array",
+            "items": {
+                "$ref": "rule.json"
+            },
+            "minItems": 1
+        }
+    },
+    "required": ["lastUpdatedAt", "refreshInterval", "rules"],
+    "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+    "name": "mosparo/specifications",
+    "description": "Specifications like JSON schemas and other things for mosparo",
+    "keywords": ["mosparo", "specification", "json", "schema"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mosparo",
+            "homepage": "https://mosparo.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Mosparo\\Specifications\\": "src"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    }
+}
