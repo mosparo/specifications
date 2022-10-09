@@ -40,7 +40,7 @@ class Specifications
      */
     public static function getJsonSchemaPath($schema): string
     {
-        $path = self::getSpecificationResourcesPath() . 'json-schema/' . $schema;
+        $path = self::getSpecificationResourcesPath() . '/json-schema/' . $schema;
         if (!file_exists($path)) {
             throw new Exception(sprintf('Json schema "%s" not found.', $schema));
         }
