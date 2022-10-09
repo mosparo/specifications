@@ -27,7 +27,7 @@ class Specifications
      */
     public static function getSpecificationResourcesPath(): string
     {
-        return __DIR__ . '/resources/';
+        return realpath(__DIR__ . '/../resources/');
     }
 
     /**
