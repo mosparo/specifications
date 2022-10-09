@@ -1,0 +1,37 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/update.json",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "version": {
+                "type": "string"
+            },
+            "branch": {
+                "type": "string",
+                "enum": ["stable", "develop"]
+            },
+            "date": {
+                "type": "string",
+                "format": "date-time"
+            },
+            "signature": {
+                "type": "string"
+            },
+            "downloadUrl": {
+                "type": "string",
+                "format": "uri"
+            },
+            "description": {
+                "type": "string"
+            },
+            "detailsUrl": {
+                "type": "string",
+                "format": "uri"
+            }
+        },
+        "required": ["version", "signature", "downloadUrl"],
+        "additionalProperties": false
+    }
+}

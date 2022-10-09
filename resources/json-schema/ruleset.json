@@ -1,4 +1,6 @@
 {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/ruleset.json",
     "type": "object",
     "properties": {
         "lastUpdatedAt": {
@@ -10,7 +12,7 @@
         "rules": {
             "type": "array",
             "items": {
-                "$ref": "rule.json"
+                "$ref": "http://schema.mosparo.io/rule.json#"
             },
             "minItems": 1
         }

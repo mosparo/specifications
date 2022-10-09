@@ -19,6 +19,7 @@ class Specifications
 {
     const JSON_SCHEMA_RULE = 'rule.json';
     const JSON_SCHEMA_RULESET = 'ruleset.json';
+    const JSON_SCHEMA_UPDATE = 'update.json';
 
     /**
      * Returns the path to the specification resources
