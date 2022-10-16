@@ -38,7 +38,7 @@
                 "format": "uri"
             }
         },
-        "required": ["version", "signature", "downloadUrl"],
+        "required": ["version", "downloadSignature", "downloadUrl", "hashesSignature", "hashesUrl"],
         "additionalProperties": false
     }
 }
