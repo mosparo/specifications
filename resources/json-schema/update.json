@@ -16,10 +16,17 @@
                 "type": "string",
                 "format": "date-time"
             },
-            "signature": {
+            "downloadSignature": {
+                "type": "string"
+            },
+            "hashesSignature": {
                 "type": "string"
             },
             "downloadUrl": {
+                "type": "string",
+                "format": "uri"
+            },
+            "hashesUrl": {
                 "type": "string",
                 "format": "uri"
             },
