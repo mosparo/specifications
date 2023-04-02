@@ -10,7 +10,7 @@
             },
             "branch": {
                 "type": "string",
-                "enum": ["stable", "develop"]
+                "enum": ["stable", "beta", "develop"]
             },
             "date": {
                 "type": "string",
