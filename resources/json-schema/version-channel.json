@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://schema.mosparo.io/version-channel.json",
+  "type": "object",
+  "properties": {
+    "versionsUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "latestVersion": {
+      "type": ["null", "string"]
+    },
+    "latestVersionDateTime": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "nextMajorVersionUrl": {
+      "type": ["null", "string"]
+    },
+    "recommendNextMajorVersion": {
+      "type": "boolean"
+    }
+  },
+  "required": ["versionsUrl"],
+  "additionalProperties": false
+}

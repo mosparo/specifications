@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://schema.mosparo.io/version-channnel-versions.json",
+  "type": "object",
+  "properties": {
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/version"
+      }
+    }
+  },
+  "$defs": {
+    "version": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "releasedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "downloadSignature": {
+          "type": "string"
+        },
+        "downloadUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "hashesSignature": {
+          "type": "string"
+        },
+        "hashesUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "description": {
+          "type": ["null", "string"]
+        },
+        "detailsUrl": {
+          "type": ["null", "string"],
+          "format": "uri"
+        }
+      },
+      "required": ["number", "releasedAt", "downloadSignature", "downloadUrl", "hashesSignature", "hashesUrl"],
+      "additionalProperties": false
+    }
+  }
+}

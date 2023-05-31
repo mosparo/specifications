@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://schema.mosparo.io/version.json",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "object",
+      "patternProperties": {
+        "^(develop|beta|stable)$": {
+          "$ref": "http://schema.mosparo.io/version-channel.json#"
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "minValue": {
+            "type": ["null", "string"]
+          }
+        }
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["number", "channels", "requirements", "createdAt"],
+  "additionalProperties": false
+}

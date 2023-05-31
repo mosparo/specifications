@@ -4,7 +4,7 @@
  * The Specification class helps to get access to the specifications.
  *
  * @author Matthias Zobrist <matthias.zobrist@zepi.net>
- * @copyright 2021-2022 mosparo
+ * @copyright 2021-2023 mosparo
  * @license MIT
  */
 
@@ -20,6 +20,9 @@ class Specifications
     const JSON_SCHEMA_RULE = 'rule.json';
     const JSON_SCHEMA_RULESET = 'ruleset.json';
     const JSON_SCHEMA_UPDATE = 'update.json';
+    const JSON_SCHEMA_VERSION = 'version.json';
+    const JSON_SCHEMA_VERSION_CHANNEL = 'version-channel.json';
+    const JSON_SCHEMA_VERSION_CHANNEL_VERSIONS = 'version-channel-versions.json';
 
     /**
      * Returns the path to the specification resources
@@ -32,7 +35,7 @@ class Specifications
     }
 
     /**
-     * REturns the path to the JSON schema
+     * Returns the path to the JSON schema
      *
      * @param $schema
      * @return string
