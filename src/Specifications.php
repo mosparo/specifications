@@ -17,8 +17,12 @@ namespace Mosparo\Specifications;
  */
 class Specifications
 {
+    const SPECIFICATIONS_VERSION = '3.0';
+
+    const JSON_SCHEMA_PROJECT = 'project.json';
     const JSON_SCHEMA_RULE = 'rule.json';
     const JSON_SCHEMA_RULESET = 'ruleset.json';
+    const JSON_SCHEMA_SETTING = 'setting.json';
     const JSON_SCHEMA_UPDATE = 'update.json';
     const JSON_SCHEMA_VERSION = 'version.json';
     const JSON_SCHEMA_VERSION_CHANNEL = 'version-channel.json';

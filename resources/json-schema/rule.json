@@ -7,10 +7,13 @@
             "type": "string"
         },
         "description": {
-            "type": "string"
+            "type": ["string", "null"]
         },
         "type": {
             "type": "string"
+        },
+        "status": {
+            "type": "boolean"
         },
         "items": {
             "type": "array",
@@ -27,14 +30,14 @@
                         "type": "string"
                     },
                     "rating": {
-                        "type": "integer"
+                        "type": "number"
                     }
                 }
             },
             "minItems": 1
         },
         "spamRatingFactor": {
-            "type": "integer"
+            "type": "number"
         },
         "uuid": {
             "type": "string"

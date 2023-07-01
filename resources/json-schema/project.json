@@ -1,0 +1,78 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/project.json",
+    "type": "object",
+    "properties": {
+        "specificationsVersion": {
+            "type": "string"
+        },
+        "exportedAt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "project": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": ["string", "null"]
+                },
+                "hosts": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "spamScore": {
+                    "type": "number"
+                },
+                "design": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://schema.mosparo.io/setting.json#"
+                    }
+                },
+                "security": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://schema.mosparo.io/setting.json#"
+                    }
+                },
+                "rules": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://schema.mosparo.io/rule.json#"
+                    }
+                },
+                "rulesets": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "status": {
+                                "type": "boolean"
+                            },
+                            "spamRatingFactor": {
+                                "type": "number"
+                            }
+                        },
+                        "required": ["name", "url", "status"],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": ["specificationsVersion", "exportedAt", "project"],
+    "additionalProperties": false
+}

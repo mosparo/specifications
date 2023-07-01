@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/setting.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "value": {
+            "type": ["string", "number", "boolean", "null"]
+        }
+    },
+    "required": ["name", "value"],
+    "additionalProperties": false
+}
