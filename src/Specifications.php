@@ -17,7 +17,7 @@ namespace Mosparo\Specifications;
  */
 class Specifications
 {
-    const SPECIFICATIONS_VERSION = '3.0';
+    const SPECIFICATIONS_VERSION = '4.0';
 
     const JSON_SCHEMA_PROJECT = 'project.json';
     const JSON_SCHEMA_RULE = 'rule.json';
