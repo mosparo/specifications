@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/rule-package.json",
+    "type": "object",
+    "properties": {
+        "lastUpdatedAt": {
+            "type": "string"
+        },
+        "refreshInterval": {
+            "type": "integer"
+        },
+        "rules": {
+            "type": "array",
+            "items": {
+                "$ref": "http://schema.mosparo.io/rule.json#"
+            },
+            "minItems": 1
+        }
+    },
+    "required": ["lastUpdatedAt", "refreshInterval", "rules"],
+    "additionalProperties": false
+}

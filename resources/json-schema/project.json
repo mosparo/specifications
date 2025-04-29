@@ -126,6 +126,35 @@
                         },
                         "required": ["name", "url", "status"],
                         "additionalProperties": false
+                    },
+                    "deprecated": true
+                },
+                "rulePackages": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "uuid": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "integer"
+                            },
+                            "source": {
+                                "type": ["null", "string"]
+                            },
+                            "status": {
+                                "type": "boolean"
+                            },
+                            "spamRatingFactor": {
+                                "type": "number"
+                            }
+                        },
+                        "required": ["uuid", "name", "type", "source", "status"],
+                        "additionalProperties": false
                     }
                 }
             },

@@ -21,6 +21,7 @@ class Specifications
 
     const JSON_SCHEMA_PROJECT = 'project.json';
     const JSON_SCHEMA_RULE = 'rule.json';
+    const JSON_SCHEMA_RULE_PACKAGE = 'rule-package.json';
     const JSON_SCHEMA_RULESET = 'ruleset.json';
     const JSON_SCHEMA_SETTING = 'setting.json';
     const JSON_SCHEMA_UPDATE = 'update.json';
