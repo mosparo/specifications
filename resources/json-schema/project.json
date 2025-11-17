@@ -88,6 +88,24 @@
                                     "type": ["string", "integer"]
                                 }
                             },
+                            "formPageUrls": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "formActionUrls": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "formIds": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
                             "securitySettings": {
                                 "type": "array",
                                 "items": {
