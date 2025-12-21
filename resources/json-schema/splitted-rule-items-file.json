@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/splitted-rule-items-file.json",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "ruleUuid": {
+                "type": "string"
+            },
+            "uuid": {
+                "type": "string"
+            },
+            "type": {
+                "type": "string"
+            },
+            "value": {
+                "type": "string"
+            },
+            "rating": {
+                "type": "number"
+            }
+        },
+        "required": ["uuid", "type", "value", "rating"],
+        "additionalProperties": false
+    },
+    "minItems": 1
+}

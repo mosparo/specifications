@@ -4,7 +4,7 @@
  * The Specification class helps to get access to the specifications.
  *
  * @author Matthias Zobrist <matthias.zobrist@zepi.net>
- * @copyright 2021-2023 mosparo
+ * @copyright 2021-2025 mosparo
  * @license MIT
  */
 
@@ -24,10 +24,13 @@ class Specifications
     const JSON_SCHEMA_RULE_PACKAGE = 'rule-package.json';
     const JSON_SCHEMA_RULESET = 'ruleset.json';
     const JSON_SCHEMA_SETTING = 'setting.json';
+    const JSON_SCHEMA_SPLITTED_RULES_FILE = 'splitted-rules-file.json';
+    const JSON_SCHEMA_SPLITTED_RULE_ITEMS_FILE = 'splitted-rule-items-file.json';
     const JSON_SCHEMA_UPDATE = 'update.json';
     const JSON_SCHEMA_VERSION = 'version.json';
     const JSON_SCHEMA_VERSION_CHANNEL = 'version-channel.json';
     const JSON_SCHEMA_VERSION_CHANNEL_VERSIONS = 'version-channel-versions.json';
+    const JSON_SCHEMA_ZIPPED_RULE_PACKAGE = 'zipped-rule-package.json';
 
     /**
      * Returns the path to the specification resources
