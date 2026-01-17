@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://schema.mosparo.io/rule-package-batch-remove.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "id"
+    ],
+    "additionalProperties": false
+}

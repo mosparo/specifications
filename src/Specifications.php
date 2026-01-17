@@ -31,6 +31,10 @@ class Specifications
     const JSON_SCHEMA_VERSION_CHANNEL = 'version-channel.json';
     const JSON_SCHEMA_VERSION_CHANNEL_VERSIONS = 'version-channel-versions.json';
     const JSON_SCHEMA_ZIPPED_RULE_PACKAGE = 'zipped-rule-package.json';
+    const JSON_SCHEMA_RULE_PACKAGE_BATCH_URP = 'rule-package-batch-urp.json';
+    const JSON_SCHEMA_RULE_PACKAGE_BATCH_UR = 'rule-package-batch-ur.json';
+    const JSON_SCHEMA_RULE_PACKAGE_BATCH_URI = 'rule-package-batch-uri.json';
+    const JSON_SCHEMA_RULE_PACKAGE_BATCH_REMOVE = 'rule-package-batch-remove.json';
 
     /**
      * Returns the path to the specification resources
