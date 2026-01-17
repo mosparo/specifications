@@ -20,9 +20,6 @@
             "status": {
                 "type": "boolean"
             },
-            "numberOfItems": {
-                "type": "integer"
-            },
             "spamRatingFactor": {
                 "type": "number"
             },
