@@ -117,6 +117,25 @@
                         "additionalProperties": false
                     }
                 },
+                "translations": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "translationKey": {
+                                "type": "integer"
+                            },
+                            "locale": {
+                                "type": "string"
+                            },
+                            "text": {
+                                "type": "string"
+                            }
+                        },
+                        "required": ["translationKey", "locale", "text"],
+                        "additionalProperties": false
+                    }
+                },
                 "rules": {
                     "type": "array",
                     "items": {
