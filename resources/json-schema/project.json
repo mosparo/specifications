@@ -35,6 +35,18 @@
                     "type": "string",
                     "enum": ["14D", "1M", "2M", "3M", "6M", "1Y", "2Y", "FOREVER"]
                 },
+                "silentModeEnabled": {
+                    "type": "boolean"
+                },
+                "spamDataReturned": {
+                    "type": "boolean"
+                },
+                "metadataAllowed": {
+                    "type": "boolean"
+                },
+                "metadataReturned": {
+                    "type": "boolean"
+                },
                 "apiDebugMode": {
                     "type": "boolean"
                 },
