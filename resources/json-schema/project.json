@@ -148,11 +148,40 @@
                         "additionalProperties": false
                     }
                 },
+                "submissionRules": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "key": {
+                                "type": "string"
+                            },
+                            "enabled": {
+                                "type": "boolean"
+                            },
+                            "configValues": {
+                                "type": "object"
+                            },
+                            "rating": {
+                                "type": "number"
+                            }
+                        },
+                        "required": ["key", "enabled"],
+                        "additionalProperties": false
+                    }
+                },
+                "fieldRules": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "http://schema.mosparo.io/field-rule.json#"
+                    }
+                },
                 "rules": {
                     "type": "array",
                     "items": {
-                        "$ref": "http://schema.mosparo.io/rule.json#"
-                    }
+                        "$ref": "http://schema.mosparo.io/field-rule.json#"
+                    },
+                    "deprecated": true
                 },
                 "rulesets": {
                     "type": "array",

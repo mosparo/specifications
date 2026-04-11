@@ -12,7 +12,7 @@
         "rules": {
             "type": "array",
             "items": {
-                "$ref": "http://schema.mosparo.io/rule.json#"
+                "$ref": "http://schema.mosparo.io/field-rule.json#"
             },
             "minItems": 1
         }
