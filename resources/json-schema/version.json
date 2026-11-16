@@ -40,5 +40,5 @@
     }
   },
   "required": ["number", "channels", "requirements", "createdAt"],
-  "additionalProperties": false
+  "additionalProperties": true
 }

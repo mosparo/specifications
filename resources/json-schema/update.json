@@ -39,6 +39,6 @@
             }
         },
         "required": ["version", "downloadSignature", "downloadUrl", "hashesSignature", "hashesUrl"],
-        "additionalProperties": false
+        "additionalProperties": true
     }
 }

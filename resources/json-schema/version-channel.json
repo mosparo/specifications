@@ -22,5 +22,5 @@
     }
   },
   "required": ["versionsUrl"],
-  "additionalProperties": false
+  "additionalProperties": true
 }

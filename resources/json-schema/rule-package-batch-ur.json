@@ -30,5 +30,5 @@
         "type",
         "uuid"
     ],
-    "additionalProperties": false
+    "additionalProperties": true
 }

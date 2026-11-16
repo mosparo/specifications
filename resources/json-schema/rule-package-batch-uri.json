@@ -26,6 +26,6 @@
         "value",
         "rating"
     ],
-    "additionalProperties": false
+    "additionalProperties": true
 }
 

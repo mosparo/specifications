@@ -48,7 +48,7 @@
         }
       },
       "required": ["number", "releasedAt", "downloadSignature", "downloadUrl", "hashesSignature", "hashesUrl"],
-      "additionalProperties": false
+      "additionalProperties": true
     }
   }
 }

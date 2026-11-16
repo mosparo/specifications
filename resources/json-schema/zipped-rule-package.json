@@ -25,5 +25,5 @@
         }
     },
     "required": ["lastUpdatedAt", "refreshInterval", "rFiles", "riFiles"],
-    "additionalProperties": false
+    "additionalProperties": true
 }

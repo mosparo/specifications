@@ -28,7 +28,7 @@
             }
         },
         "required": ["name", "type", "uuid"],
-        "additionalProperties": false
+        "additionalProperties": true
     },
     "minItems": 1
 }

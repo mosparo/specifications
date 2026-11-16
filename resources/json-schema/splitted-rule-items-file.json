@@ -22,7 +22,7 @@
             }
         },
         "required": ["uuid", "type", "value", "rating"],
-        "additionalProperties": false
+        "additionalProperties": true
     },
     "minItems": 1
 }

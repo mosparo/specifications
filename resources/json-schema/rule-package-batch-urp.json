@@ -14,5 +14,5 @@
         "lastUpdatedAt",
         "refreshInterval"
     ],
-    "additionalProperties": false
+    "additionalProperties": true
 }

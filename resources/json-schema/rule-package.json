@@ -18,5 +18,5 @@
         }
     },
     "required": ["lastUpdatedAt", "refreshInterval", "rules"],
-    "additionalProperties": false
+    "additionalProperties": true
 }
